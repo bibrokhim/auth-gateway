@@ -1,0 +1,22 @@
+{
+    "name": "bibrokhim/auth-gateway",
+    "description": "API Gateway authentication for microservices",
+    "type": "laravel-package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bibrokhim\\AuthGateway\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bakhromjon",
+            "email": "bahromjon.ibrohimov@yandex.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2"
+    }
+}
