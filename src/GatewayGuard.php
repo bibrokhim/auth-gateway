@@ -36,8 +36,8 @@ class GatewayGuard implements Guard
         )
         {
             $user = $this->provider->retrieveByCredentials([
-                $this->headers->has(self::USER_ID_HEADER),
-                $this->headers->has(self::USER_TYPE_HEADER)
+                $this->headers->get(self::USER_ID_HEADER),
+                $this->headers->get(self::USER_TYPE_HEADER)
             ]);
         }
 
