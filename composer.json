@@ -8,6 +8,13 @@
             "Bibrokhim\\AuthGateway\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bibrokhim\\AuthGateway\\AuthServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "Bakhromjon",
