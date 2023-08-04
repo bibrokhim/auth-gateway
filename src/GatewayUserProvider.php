@@ -2,7 +2,6 @@
 
 namespace Bibrokhim\AuthGateway;
 
-use Bibrokhim\AuthGateway\User;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\UserProvider;
 

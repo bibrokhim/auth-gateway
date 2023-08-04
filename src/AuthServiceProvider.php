@@ -2,7 +2,6 @@
 
 namespace Bibrokhim\AuthGateway;
 
-use Bibrokhim\AuthGateway\GatewayGuard;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
