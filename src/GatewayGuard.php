@@ -34,6 +34,9 @@ class GatewayGuard implements Guard
             $this->headers->has(self::USER_ID_HEADER)
             && $this->headers->has(self::USER_TYPE_HEADER)
             && $this->headers->has(self::USER_PLATFORM_HEADER)
+            && in_array($this->headers->get(self::USER_PLATFORM_HEADER), [
+                'ios', 'android', 'telegram', 'web'
+            ])
         )
         {
             $user = $this->provider->retrieveByCredentials([
