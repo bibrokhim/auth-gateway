@@ -12,6 +12,7 @@ class GatewayGuard implements Guard
     use GuardHelpers;
     private const USER_ID_HEADER = 'X-User-ID';
     private const USER_TYPE_HEADER = 'X-User-Type';
+    private const USER_PLATFORM_HEADER = 'X-User-Platform';
     private HeaderBag $headers;
 
     public function __construct(HeaderBag $headers)
@@ -32,11 +33,13 @@ class GatewayGuard implements Guard
         if (
             $this->headers->has(self::USER_ID_HEADER)
             && $this->headers->has(self::USER_TYPE_HEADER)
+            && $this->headers->has(self::USER_PLATFORM_HEADER)
         )
         {
             $user = $this->provider->retrieveByCredentials([
                 $this->headers->get(self::USER_ID_HEADER),
-                $this->headers->get(self::USER_TYPE_HEADER)
+                $this->headers->get(self::USER_TYPE_HEADER),
+                $this->headers->get(self::USER_PLATFORM_HEADER)
             ]);
         }
 

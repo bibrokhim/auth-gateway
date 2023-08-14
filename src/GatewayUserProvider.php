@@ -27,7 +27,8 @@ class GatewayUserProvider implements UserProvider
     {
         return new User(
             $credentials[0],
-            $credentials[1]
+            $credentials[1],
+            $credentials[2],
         );
     }
 

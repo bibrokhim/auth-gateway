@@ -9,7 +9,8 @@ class User implements Authenticatable
 
     public function __construct(
         public int $id,
-        public string $type
+        public string $type,
+        public string $platform,
     )
     {
     }
