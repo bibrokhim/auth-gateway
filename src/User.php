@@ -3,8 +3,9 @@
 namespace Bibrokhim\AuthGateway;
 
 use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-class User implements Authenticatable
+class User extends Model implements Authenticatable
 {
 
     public function __construct(
