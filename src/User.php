@@ -9,9 +9,9 @@ class User extends Model implements Authenticatable
 {
 
     public function __construct(
-        public int $id,
-        public string $type,
-        public string $platform,
+        private readonly int    $id,
+        private readonly string $type,
+        private readonly string $platform,
     )
     {
     }
@@ -44,5 +44,15 @@ class User extends Model implements Authenticatable
     public function getRememberTokenName()
     {
 
+    }
+
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    public function getPlatform(): string
+    {
+        return $this->platform;
     }
 }
