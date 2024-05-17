@@ -55,4 +55,9 @@ class User extends Model implements Authenticatable
     {
         return $this->platform;
     }
+
+    public function getKey(): int
+    {
+        return $this->id;
+    }
 }
