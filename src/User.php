@@ -9,7 +9,7 @@ class User extends Model implements Authenticatable
 {
 
     public function __construct(
-        private readonly int    $id,
+        public readonly int $id,
         private readonly string $type,
         private readonly string $platform,
     )
