@@ -31,6 +31,11 @@ class User extends Model implements Authenticatable
 
     }
 
+    public function getAuthPasswordName()
+    {
+
+    }
+
     public function getRememberToken()
     {
 

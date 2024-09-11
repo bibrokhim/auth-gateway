@@ -36,4 +36,9 @@ class GatewayUserProvider implements UserProvider
     {
         // TODO: Implement validateCredentials() method.
     }
+
+    public function rehashPasswordIfRequired(Authenticatable $user, #[\SensitiveParameter] array $credentials, bool $force = false)
+    {
+        // TODO: Implement validateCredentials() method.
+    }
 }
