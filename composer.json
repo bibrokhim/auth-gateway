@@ -24,8 +24,8 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": "^8.2|^8.3",
-        "illuminate/support": "^10|^11",
-        "illuminate/auth": "^10|^11"
+        "php": "^8.2|^8.3|^8.4",
+        "illuminate/support": "^10|^11|^12",
+        "illuminate/auth": "^10|^11|^12"
     }
 }
