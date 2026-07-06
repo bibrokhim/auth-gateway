@@ -29,6 +29,7 @@ class GatewayUserProvider implements UserProvider
             $credentials[0],
             $credentials[1],
             $credentials[2],
+            $credentials[3] ?? []
         );
     }
 
